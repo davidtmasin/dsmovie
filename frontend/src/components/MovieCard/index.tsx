@@ -1,14 +1,19 @@
 import MovieScore from 'components/MovieScore'
 import { Link } from 'react-router-dom'
+import { Movie } from 'types/movie'
 
-function MovieCard() {
-  const movie = {
-    id: 1,
-    image: 'https://pbs.twimg.com/media/DkRxmnBW4AEztYG.jpg',
-    title: 'Ursos Grandes, Peludos e Mansos',
-    count: 2,
-    score: 4.5
-  }
+type Props = {
+  movie: Movie
+}
+
+function MovieCard({ movie }: Props) {
+  // const movie = {
+  //   id: 1,
+  //   image: 'https://pbs.twimg.com/media/DkRxmnBW4AEztYG.jpg',
+  //   title: 'Ursos Grandes, Peludos e Mansos',
+  //   count: 2,
+  //   score: 4.5
+  // }
   return (
     <div>
       <img
