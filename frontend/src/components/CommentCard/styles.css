@@ -45,10 +45,6 @@
   min-height: 40px;
 }
 
-.dsmovie-btn:first-child {
-  margin-bottom: 5px;
-}
-
 .dsmovie-btn {
   background-color: var(--color-primary);
   font-size: 14px;
@@ -58,4 +54,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.dsmovie-container-comments {
+  margin-top: 20px;
+}
+
+.dsmovie-container-comments h6 {
+  font-size: 15px;
+}
+
+.dsmovie-container-comments p {
+  font-size: 14px;
 }
