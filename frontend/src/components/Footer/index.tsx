@@ -7,8 +7,11 @@ function Footer() {
       <div className="container">
         <div className="dsmovie-footer-content">
           <p>
-            Projeto desenvolvido por <strong>David Teixeira</strong> durante a
-            Semana Spring React da escola Dev Superior.
+            Projeto desenvolvido por{' '}
+            <strong>
+              <Link to="https://linktr.ee/davidtmasin">David Teixeira</Link>
+            </strong>{' '}
+            durante a Semana Spring React da escola Dev Superior.
           </p>
         </div>
       </div>
