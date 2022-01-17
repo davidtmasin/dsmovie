@@ -71,7 +71,7 @@ function FormCard({ movieId }: Props) {
               className="form-control"
               id="email"
               name="email"
-              autoComplete="false"
+              autoComplete="off"
             />
           </div>
           <div className="form-group dsmovie-form-group">
