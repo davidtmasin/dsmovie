@@ -6,6 +6,7 @@ public class MovieDTO {
 	private Long id;
 	private String title;
 	private Double score;
+	private String comments;
 	private Integer count;
 	private String image;
 	
@@ -13,10 +14,11 @@ public class MovieDTO {
 	public MovieDTO() {}
 	
 	//Construtor com os argumentos da própria classe
-	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
+	public MovieDTO(Long id, String title, Double score, String comments, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
+		this.comments = comments;
 		this.count = count;
 		this.image = image;
 	}
@@ -26,6 +28,7 @@ public class MovieDTO {
 		id = movie.getId();
 		title = movie.getTitle();
 		score = movie.getScore();
+		comments = movie.getComments();
 		count = movie.getCount();
 		image = movie.getImage();
 	}
@@ -60,6 +63,14 @@ public class MovieDTO {
 		this.score = score;
 	}
 
+	
+	public String getComments() {
+		return comments;
+	}
+
+	public void setComments(String comments) {
+		this.comments = comments;
+	}
 
 	public Integer getCount() {
 		return count;

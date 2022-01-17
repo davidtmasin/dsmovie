@@ -19,6 +19,7 @@ public class Movie {
 	private Long id;
 	private String title;
 	private Double score;
+	private String comments;
 	private Integer count;
 	private String image;
 	
@@ -27,10 +28,11 @@ public class Movie {
 	
 	public Movie() {}
 	
-	public Movie(Long id, String title, Double score, Integer count, String image) {
+	public Movie(Long id, String title, Double score, String comments, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
+		this.comments = comments;
 		this.count = count;
 		this.image = image;
 	}
@@ -59,6 +61,15 @@ public class Movie {
 		this.score = score;
 	}
 	
+	
+	public String getComments() {
+		return comments;
+	}
+
+	public void setComments(String comments) {
+		this.comments = comments;
+	}
+
 	public Integer getCount() {
 		return count;
 	}
