@@ -1,4 +1,5 @@
 import './styles.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
         <div className="dsmovie-footer-content">
           <p>
             Projeto desenvolvido por <strong>David Teixeira</strong> durante a
-            Semana Spring React.
+            Semana Spring React da escola Dev Superior.
           </p>
         </div>
       </div>
