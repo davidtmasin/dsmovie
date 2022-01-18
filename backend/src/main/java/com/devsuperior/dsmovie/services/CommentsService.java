@@ -29,6 +29,7 @@ public class CommentsService {
 	public MovieDTO saveComments(CommentsDTO dtoComments) {
 		User user = userRepositoryCS.findByEmail(dtoComments.getEmail());
 		
+		//Se não existir o usuário, será criado e salvo no BD
 		if(user == null) {
 			user = new User();
 			user.setEmail(dtoComments.getEmail());
@@ -56,6 +57,8 @@ public class CommentsService {
 //		
 //		movie = movieRepositoryCS.save(movie);
 		
+//		movie = movieRepositoryCS.save(movie.getComments())
+//		
 		return new MovieDTO(movie);
 	}
 	

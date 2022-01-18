@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dsmovie.dto.CommentsDTO;
 import com.devsuperior.dsmovie.dto.MovieDTO;
-import com.devsuperior.dsmovie.dto.ScoreDTO;
 import com.devsuperior.dsmovie.services.CommentsService;
-import com.devsuperior.dsmovie.services.ScoreService;
 
 @RestController
 @RequestMapping(value = "/comments")
@@ -21,8 +19,8 @@ public class CommentsController {
 	
 	@PutMapping
 	public MovieDTO saveComments(@RequestBody CommentsDTO dto){
-		MovieDTO movieDTO = commentsService.saveComments(dto);
-		return movieDTO;
+		MovieDTO movieDTOC = commentsService.saveComments(dto);
+		return movieDTOC;
 	}
 	
 	

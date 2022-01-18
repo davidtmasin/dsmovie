@@ -10,7 +10,7 @@ public class Comments {
 	
 	@EmbeddedId
 	private CommentsPK id = new CommentsPK();
-	private String comment;
+	private String comments;
 	
 	public Comments() {}
 
@@ -23,11 +23,11 @@ public class Comments {
 	}
 
 	public String getComment() {
-		return comment;
+		return comments;
 	}
 
-	public void setComment(String comment) {
-		this.comment = comment;
+	public void setComment(String comments) {
+		this.comments = comments;
 	}
 	
 	public void setMovieComment(Movie movieComment) {

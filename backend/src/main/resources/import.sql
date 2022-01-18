@@ -40,7 +40,6 @@ INSERT INTO tb_score(movie_id, user_id, value) VALUES (2, 1, 3.0);
 INSERT INTO tb_score(movie_id, user_id, value) VALUES (2, 2, 3.0);
 INSERT INTO tb_score(movie_id, user_id, value) VALUES (2, 3, 4.0);
 
-
 INSERT INTO tb_comment(movie_id, user_id, comments) VALUES (1, 1, 'O filme foi .....');
 INSERT INTO tb_comment(movie_id, user_id, comments) VALUES (1, 2, 'Nos primeiros momentos do filme ....');
 INSERT INTO tb_comment(movie_id, user_id, comments) VALUES (2, 1, 'Eu sinceramente, ....');
